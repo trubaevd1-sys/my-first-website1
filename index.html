@@ -30,7 +30,12 @@
           ✦ MY FIRST GITHUB PROJECT
         </span>
 
-        <h1>Вітаю на <span class="gradient-text"> моєму сайті! </span></h1>
+        <h1>
+          Привіт!
+          <span class="gradient-text">
+            Мене звати Денис
+          </span>
+        </h1>
 
         <p class="hero-description">
           Я навчаюся працювати з Git та GitHub.
@@ -39,7 +44,7 @@
 
         <div class="hero-actions">
           <a class="btn btn-light"
-             href="https://github.com/[ТВОЙ_GITHUB_USERNAME]"
+             href="https://github.com/trubaevd1-sys/my-first-website1.git"
              target="_blank"
              rel="noopener noreferrer">
             ◉ Мій GitHub
@@ -75,157 +80,82 @@
         <div class="card-icon cyan">✉</div>
         <div>
           <h2>Мої контакти</h2>
-          <a href="mailto:trubaivdenis4@gmail.com">[ТВІЙ_EMAIL]</a>
+          <a href="mailto:trubaivdenis4@gmail.com">trubaivdenis4@gmail.com</a>
         </div>
       </section>
     </div>
 
-    <footer class="footer">
-      <p>Made with Git & GitHub Pages</p>
-    </footer>
-  </div>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="page">
-
-    <header class="navbar">
-      <a class="brand" href="#home">
-        <span class="brand-icon">⌘</span>
-        <span>My Website</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="#home">Головна</a>
-        <a href="#about">Про мене</a>
-        <a href="#hobbies">Захоплення</a>
-        <a href="#git">Git</a>
-        <a href="#contacts">Контакти</a>
-      </nav>
-    </header>
-
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <span class="eyebrow">
-          ✦ MY FIRST GITHUB PROJECT
-        </span>
-
-        <h1>
-          Привіт!
-          <span class="gradient-text">
-            Мене звати Денис
-          </span>
-        </h1>
-
-        <p class="hero-description">
-          Я навчаюся працювати з Git та GitHub.
-          Це моя перша вебсторінка.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn btn-light"
-             href="https://github.com/[ТВОЙ_GITHUB_USERNAME]"
-             target="_blank"
-             rel="noopener noreferrer">
-            ◉ Мій GitHub
-          </a>
-
-          <a class="btn btn-primary" href="#about">
-            Про мене ↓
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="orbit"></div>
-        <div class="floating-icon icon-git">⑂</div>
-        <div class="main-icon">⌘</div>
-        <div class="floating-icon icon-code">&lt;/&gt;</div>
-        <div class="floating-icon icon-terminal">&gt;_</div>
-      </div>
     <section class="git-panel" id="git">
+      <div class="section-heading">
+        <span class="git-symbol">⑂</span>
+        <h2>Результати роботи з Git</h2>
+      </div>
 
-  <div class="section-heading">
-    <span class="git-symbol">⑂</span>
-    <h2>Результати роботи з Git</h2>
-  </div>
+      <p class="section-description">
+        Історія комітів, гілки та результати
+        виконання Git-команд.
+      </p>
 
-  <p class="section-description">
-    Історія комітів, гілки та результати
-    виконання Git-команд.
-  </p>
+      <div class="git-tabs">
+        <input type="radio" name="git-tab" id="tab-status" checked>
+        <input type="radio" name="git-tab" id="tab-branch">
+        <input type="radio" name="git-tab" id="tab-log">
+        <input type="radio" name="git-tab" id="tab-merge">
 
-  <div class="git-tabs">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-status" checked>
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-branch">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-log">
-
-    <input type="radio"
-           name="git-tab"
-           id="tab-merge">
-
-    <div class="tab-labels">
-      <label for="tab-status">Git Status</label>
-      <label for="tab-branch">Git Branch</label>
-      <label for="tab-log">Git Log</label>
-      <label for="tab-merge">Merge History</label>
-    </div>
-
-    <div class="terminal">
-
-      <div class="terminal-header">
-        <div class="window-dots">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
+        <div class="tab-labels">
+          <label for="tab-status">Git Status</label>
+          <label for="tab-branch">Git Branch</label>
+          <label for="tab-log">Git Log</label>
+          <label for="tab-merge">Merge History</label>
         </div>
 
-        <span class="terminal-title">
-          git-terminal
-        </span>
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="terminal-title">
+              git-terminal
+            </span>
+          </div>
+
+          <div class="terminal-body">
+            <pre class="tab-content status"><code>$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean</code></pre>
+
+            <pre class="tab-content branch"><code>$ git branch -a
+  feature/about
+- main
+  remotes/origin/feature/about
+  remotes/origin/main</code></pre>
+
+            <pre class="tab-content log"><code>$ git log --oneline
+044f23b (HEAD -> main, origin/main) Add Git results section
+4464fa4 Update main heading
+71d0480 Add files via upload
+b6a9067 Add initial website</code></pre>
+
+            <pre class="tab-content merge"><code>$ git log --merges
+commit 044f23ba80de44c145494f29c4e518432d09d026 (HEAD -> main, origin/main)
+Merge: 4464fa4 71d0480
+Author: Денис &lt;trubaevd1@gmail.com&gt;
+Date:   Fri Oct 30 10:12:45 2026 +0200
+
+    Add Git results section</code></pre>
+          </div>
+        </div>
       </div>
-
-      <div class="terminal-body">
-
-        <pre class="tab-content status"><code>$ git status
-[ВАШ РЕЗУЛЬТАТ GIT STATUS]</code></pre>
-
-        <pre class="tab-content branch"><code>$ git branch -a
-[ВАШ РЕЗУЛЬТАТ GIT BRANCH -A]</code></pre>
-
-        <pre class="tab-content log"><code>$ git log --oneline
-[ВАШ РЕЗУЛЬТАТ GIT LOG --ONELINE]</code></pre>
-
-        <pre class="tab-content merge"><code>$ git log --merges
-[ВАШ РЕЗУЛЬТАТ GIT LOG --MERGES]</code></pre>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-    </div>
+    </section>
 
     <footer class="footer">
       <p>Made with Git & GitHub Pages</p>
     </footer>
+
   </div>
 </body>
 </html>
